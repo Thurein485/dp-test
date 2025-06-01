@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <link rel="stylesheet" href="About.css">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+
+
+    <header>
+        <a href="index.html" class="logo-icon">
+            <img src="images/Ditch Plastics Logo.png" alt="Logo">
+        </a>
+        <input type="checkbox" id="menu-checkbox" />
+        <label for="menu-checkbox" class="menu-toggle">&#9776;</label>
+        <nav id="main-nav">
+            <a href="index.html">Home</a>
+            <a href="About.html" class="active">About Us</a>
+            <a href="Swaps.html">Swaps</a>
+            <a href="DIY.html">DIY</a>
+            <a href="SFF.html">Solutions</a>
+            <a href="Contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <h1>Join Our Movement to Ditch Plastic</h1>
+      <p>Together, we're building a future free from plastic pollution, one conscious choice at a time.</p>
+    </div>
+  </section>
+
+  <section class="our-story">
+    <div class="container">
+      <h2>Our Story: Planting the Seed of Change</h2>
+      <p>It started with a simple observation: the overwhelming tide of plastic impacting our school and local environment. As students passionate about science and deeply concerned for our planet's future, we felt compelled to act. We believe that significant change doesn't always require grand gestures; it blossoms from consistent, everyday choices. Our team united with a shared vision: to empower our community to reduce plastic consumption and cultivate a more sustainable way of life.</p>
+      <div class="collective">
+        <div class="vision">
+          <h3>Our Vision</h3>
+          <p>To see a world where the impact of single-use plastic is minimized, allowing nature to thrive and future generations to inherit a healthy planet.</p>
+        </div>
+        <div class="passion">
+          <h3>Our Passion</h3>
+          <p>Fueled by a love for science and a commitment to sustainability, we dedicate our energy to finding and promoting practical, eco-friendly solutions.</p>
+        </div>
+        <div class="impact">
+          <h3>Our Impact</h3>
+          <p>We strive to make a tangible difference in our school and community through education, awareness campaigns, and the promotion of plastic alternatives.</p>
+        </div>
+        <div class="spark">
+          <h3>The Spark Within</h3>
+          <p>Each member brings a unique set of skills and perspectives, igniting innovative ideas and driving our collective efforts forward.</p>
+        </div>
+      </div>
+      <a href="#have-questions" class="action-button">Got Questions?</a>
+    </div>
+  </section>
+
+  <section class="our-people">
+    <div class="container">
+      <h2>Meet the Driven Minds Behind the Change</h2>
+      <p>Get to know the individuals who bring their unique talents and unwavering dedication to our mission.</p>
+      <div class="member-grid">
+        <div class="person">
+          <img src="images/Zarni .png" alt="Zarni Htut">
+          <h4>Zarni Htut</h4>
+          <p>The visionary leader, guiding our projects with a clear strategic compass.</p>
+        </div>
+        <div class="person">
+          <img src="images/Thurein.png" alt="Thurein">
+          <h4>Thurein Lin Thant</h4>
+          <p>Our strategic thinker, ensuring our initiatives are well-planned and impactful.</p>
+        </div>
+        <div class="person">
+          <img src="images/Hein Thuta.png" alt="Hein">
+          <h4>Hein Thuta Tun</h4>
+          <p>The creative force, shaping our message through compelling visuals and media.</p>
+        </div>
+        <div class="person">
+          <img src="images/Kaung Satt.png" alt="Kaung">
+          <h4>Kaung Satt Hein</h4>
+          <p>The unpredictable innovator, often bringing a fresh and unexpected perspective.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="have-questions" id="have-questions">
+    <div class="container">
+      <h2>Common Questions About Our Mission</h2>
+      <p>We're here to provide clarity. Explore some of the frequently asked questions about plastic pollution and our efforts.</p>
+
+      <div class="faq-toggle">
+        <div class="question">Why is reducing plastic so important?</div>
+        <div class="answer">Plastic persists in our environment for centuries, polluting our oceans and land, harming wildlife, and even impacting our health through microplastics. Reducing its use is a crucial step towards a healthier planet.</div>
+      </div>
+
+      <div class="faq-toggle">
+        <div class="question">What are some easy first steps to ditch plastic?</div>
+        <div class="answer">Small changes can make a big difference! Start by bringing your own reusable shopping bags, water bottles, and coffee cups. Say no to single-use straws and cutlery whenever possible.</div>
+      </div>
+
+      <div class="faq-toggle">
+        <div class="question">Are there effective alternatives to most plastic products?</div>
+        <div class="answer">Absolutely! Innovation is constantly providing us with more sustainable choices. Consider items made from bamboo, glass, stainless steel, organic cotton, and even biodegradable materials.</div>
+      </div>
+
+      <div class="faq-toggle">
+        <div class="question">Is a completely plastic-free lifestyle realistic?</div>
+        <div class="answer">While completely eliminating plastic from our lives can be challenging in the current infrastructure, significant reduction is absolutely achievable and impactful. Every step towards less plastic consumption counts.</div>
+      </div>
+
+    <div class="faq-toggle">
+        <div class="question">What are the consequences of inaction on plastic pollution?</div>
+        <div class="answer">Continuing our current trajectory of plastic consumption will lead to increasingly polluted ecosystems, further harm to marine life, potential health risks from microplastics, and a less sustainable future for generations to come.</div>
+    </div>
+    </div>
+</section>
+
+<script>
+    const faqToggles = document.querySelectorAll('.faq-toggle');
+    faqToggles.forEach(toggle => {
+    const question = toggle.querySelector('.question');
+    question.addEventListener('click', () => {
+        toggle.classList.toggle('active');
+    });
+    });
+
+    function handleSubscribe(event) {
+        event.preventDefault(); // Stop form from reloading the page
+        const button = document.getElementById('subscribe-button');
+        button.textContent = 'Thank You!';
+        button.disabled = true;
+    }
+        function toggleMenu() {
+        const navList = document.querySelector("nav ul");
+        navList.classList.toggle("active");
+    }
+</script>
+<footer>
+    <div class="container">
+        <div class="footer-links">
+            <div class="footer-column">
+                <h3>Navigate</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About Us</a></li>
+                    <li><a href="Swaps.html">Swaps</a></li>
+                    <li><a href="DIY.html">DIY</a></li>
+                    <li><a href="SFF.html">Solutions</a></li>
+                    <li><a href="Contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Get Involved</h3>
+                <ul>
+                    <li><a href="Contact.html">Become a Member</a></li>
+                    <li><a href="Contact.html">Support Us</a></li>
+                    <li><a href="Contact.html">Volunteer</a></li>
+                    <li><a href="Contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Stay Connected</h3>
+                <p>Sign up for our newsletter to receive the latest updates and news.</p>
+                <form class="newsletter-form" onsubmit="handleSubscribe(event)">
+                    <input type="email" placeholder="Your Email Address" required>
+                    <button type="submit" class="button primary small" id="subscribe-button">Subscribe</button>
+                    <div class="footer-bottom-inline">
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/yourpage" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://twitter.com/yourtwitter" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.youtube.com/yourchannel" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                            <a href="https://www.instagram.com/yourinsta" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="mailto:ditchingplastic@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        </div>
+                        <p>© 2025 Ditch Plastics. All rights reserved.</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
